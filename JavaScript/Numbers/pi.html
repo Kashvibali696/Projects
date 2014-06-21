@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Numbers - PI</title>
+</head>
+<body>
+    <div id="input">
+        <input id="howMany" type="text"/>
+        <button onclick="doWork();">Go!</button>
+    </div>
+    <p id="result" style="display: none;"></p>
+    <script type="text/javascript">
+        window.MAX = 20;
+
+        function doWork() {
+            var howManyStr = document.getElementById('howMany').value,
+                howManyInt = parseInt(howManyStr),
+                result = document.getElementById('result');
+            
+            if (!isNaN(howManyInt) && howManyInt != 0 && howManyInt < window.MAX) {
+                result.innerText = getFormattedPi(howManyInt);
+                result.style.display = 'block';
+            } else {
+                result.innerText = Math.PI;
+                result.style.display = 'block'; 
+            }
+
+            function getFormattedPi(howMany) {
+                return Math.PI.toFixed(howMany);
+            }
+        }
+        
+        
+    </script>
+</body>
+</html>
