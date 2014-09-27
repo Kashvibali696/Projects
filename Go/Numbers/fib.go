@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"log"
 	"strconv"
+	"os"
 )
-import "os"
+
 
 func fib(arg int) []int {
 	rv := make([]int, arg)
