@@ -3,10 +3,9 @@ package main
 import (
 	"fmt"
 	"log"
-	"strconv"
 	"os"
+	"strconv"
 )
-
 
 func fib(arg int) []int {
 	rv := make([]int, arg)

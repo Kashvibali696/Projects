@@ -3,3 +3,4 @@
 *.class
 bin
 *.swp
+NodeJS/node_modules

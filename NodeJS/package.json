@@ -1,0 +1,21 @@
+{
+  "name": "Projects",
+  "version": "0.0.0",
+  "description": "Projects",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "nodeunit": "~0.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Projects"
+  ],
+  "author": "mic4ael",
+  "license": "ISC"
+}
