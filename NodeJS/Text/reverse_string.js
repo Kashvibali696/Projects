@@ -11,7 +11,7 @@ function reverseString(text) {
         copy = '',
         old;
 
-    for (var it = len - 1; it >= 0; it --) {
+    for (var it = len - 1; it >= 0; it--) {
         copy += text[it];
     }
 
