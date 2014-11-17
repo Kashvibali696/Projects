@@ -32,5 +32,5 @@ func main() {
 	}
 
 	var format string = "%." + strconv.Itoa(int(howMany)) + "f"
-	fmt.Printf("Pi number with %d decimal numbers "+format+"\n", howMany, math.Pi)
+	fmt.Println("Pi number with %d decimal numbers " + format + "\n", howMany, math.Pi)
 }

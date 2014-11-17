@@ -9,7 +9,6 @@ import (
 
 func fib(arg int) []int {
 	rv := make([]int, arg)
-
 	for i := 0; i < arg; i++ {
 		if i == 0 || i == 1 {
 			rv[i] = 1
@@ -19,6 +18,16 @@ func fib(arg int) []int {
 	}
 
 	return rv
+}
+
+func concurrentFib(arg int, channel chan int) {
+	x, y := 0, 1
+	for i := 0; i < arg; arg++ {
+		channel <- x
+		x, y = y, x+y
+	}
+
+	close(x)
 }
 
 func main() {

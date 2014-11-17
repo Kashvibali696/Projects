@@ -7,10 +7,10 @@
 
 class Text {
 public:
-    static bool isPalindrome(std::string);
+    static bool is_palindrome(std::string);
 };
 
-bool Text::isPalindrome(std::string text) {
+bool Text::is_palindrome(std::string text) {
     int len = text.length();
     if (len == 0) {
         return false;

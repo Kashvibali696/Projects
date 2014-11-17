@@ -3,12 +3,12 @@
 
 int test_main(int argc, char **argv)
 {
-    BOOST_CHECK(Text::isPalindrome("asd") == false);
-    BOOST_CHECK(Text::isPalindrome("kajak") == true);
-    BOOST_CHECK(Text::isPalindrome("") == false);
-    BOOST_CHECK(Text::isPalindrome("palindrome") == false);
-    BOOST_CHECK(Text::isPalindrome("mama") == false);
-    BOOST_CHECK(Text::isPalindrome("Kajak") == true);
+    BOOST_CHECK(Text::is_palindrome("asd") == false);
+    BOOST_CHECK(Text::is_palindrome("kajak") == true);
+    BOOST_CHECK(Text::is_palindrome("") == false);
+    BOOST_CHECK(Text::is_palindrome("palindrome") == false);
+    BOOST_CHECK(Text::is_palindrome("mama") == false);
+    BOOST_CHECK(Text::is_palindrome("Kajak") == true);
 
     return 0;
 }
