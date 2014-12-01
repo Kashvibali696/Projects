@@ -44,10 +44,10 @@ def dec2bin(decimal_number):
     ret = ''
     while True:
         if dec_n == 1:
-            ret += '1'
+            ret = '1' + ret
             break
         remainder = dec_n % 2
-        ret += str(remainder)
+        ret = str(remainder) + ret
         dec_n /= 2
 
-    return ret[::-1]
+    return ret
