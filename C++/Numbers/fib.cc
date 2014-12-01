@@ -20,6 +20,7 @@ static int *fib(int arg) {
             rv[i] = 1;
             continue;
         }
+
         rv[i] = rv[i-1] + rv[i-2];
     }
 
@@ -34,7 +35,7 @@ int main(int argc, char *argv[])
         cout << "Wrong number of arguments!" << endl;
         return 1;
     }
-    
+
     howMany = atoi(argv[1]);
     if (howMany == 0) {
         cout << "Wrong argument!" << endl;
@@ -49,7 +50,7 @@ int main(int argc, char *argv[])
     for (i = 0; i < howMany; i++) {
         cout << "Element #" << i << ": " << rv[i] << endl;
     }
-    
+
     delete []rv;
     return 0;
 }

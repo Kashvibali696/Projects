@@ -16,7 +16,7 @@ if __name__ == '__main__':
     if len(args) == 1 or len(args) > 2:
         print 'Program needs 1 argument! Exiting!'
         sys.exit(1)
-    try: 
+    try:
         howMany = int(args[1])
         if howMany > 0:
             result = fib(howMany)
