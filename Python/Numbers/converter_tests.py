@@ -19,7 +19,7 @@ class Dec2BinTest(unittest.TestCase):
             dec2bin('asdasd')
 
         with self.assertRaises(WrongArgumentException):
-			dec2bin(2.5)
+            dec2bin(2.5)
 
 
 class Bin2DecTest(unittest.TestCase):
