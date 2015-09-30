@@ -4,22 +4,18 @@ import math
 MAX = 25
 
 
-def main(howMany):
+class WrongNumberOfArguments(Exception):
+    pass
+
+
+def e_to_nth_digit(how_many):
     """return up to nth decimal numbers from e"""
-    return '%.{0}f'.format(howMany)
-
-
-def validate_args(args):
-    """docstring for validate_args"""
-    if len(args) == 1 or len(args) > 2:
-        return False, None
-    return int(args[1]) <= MAX, int(args[1])
+    if how_many < 0 or how_many > MAX:
+        how_many = MAX
+    return '%.{0}f'.format(how_many) % (math.e, )
 
 
 if __name__ == '__main__':
-    valid, howMany = validate_args(sys.argv)
-    if valid:
-        _format = main(howMany)
-        print _format % (math.e)
-    else:
-        print 'Wrong number of arguments or provided argument exceeds max value.'
+    if sys.args != 1:
+        raise WrongNumberOfArguments('Number of arguments must be equal to one')
+    print e_to_nth_digit(sys.argv)
