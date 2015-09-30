@@ -5,7 +5,7 @@ MAX = 25
 
 
 def main(howMany):
-    """return up to nth decimal numbers from pi"""
+    """return up to nth decimal numbers from e"""
     return '%.{0}f'.format(howMany)
 
 
@@ -20,6 +20,6 @@ if __name__ == '__main__':
     valid, howMany = validate_args(sys.argv)
     if valid:
         _format = main(howMany)
-        print _format % (math.pi)
+        print _format % (math.e)
     else:
         print 'Wrong number of arguments or provided argument exceeds max value.'
