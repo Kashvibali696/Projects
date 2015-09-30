@@ -39,7 +39,7 @@ def bin2dec(bin_number):
 def dec2bin(decimal_number):
     dec_n = int(decimal_number)
     if dec_n in (0, 1):
-		return str(dec_n)
+        return str(dec_n)
 
     ret = ''
     while True:
