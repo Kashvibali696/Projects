@@ -7,10 +7,11 @@ def fib(howMany):
         if i == 0 or i == 1:
             rv.append(1)
         else:
-            val = rv[i-1] + rv[i-2]
+            val = rv[i - 1] + rv[i - 2]
             rv.append(val)
 
     return rv
+
 
 if __name__ == '__main__':
     args = sys.argv
