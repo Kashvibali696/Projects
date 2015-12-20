@@ -28,6 +28,8 @@ class PiToNthDigitTest(unittest.TestCase):
 
     def test_valid_numbers(self):
         self.assertEqual(validate_credit_card_number(4556737586899855), True)
+        self.assertEqual(validate_credit_card_number(36061213567126), True)
+        self.assertEqual(validate_credit_card_number(5493001473992015), True)
 
 if __name__ == '__main__':
     unittest.main()
