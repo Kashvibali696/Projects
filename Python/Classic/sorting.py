@@ -18,4 +18,32 @@ def bubble_sort(unsorted):
 
 
 def merge_sort(unsorted):
-    pass
+    if not unsorted:
+        return unsorted
+
+    left = []
+    right = []
+    for index, element in enumerate(unsorted):
+        if index % 2 != 0:
+            left.append(element)
+        else:
+            right.append(element)
+
+    left = merge_sort(left)
+    right = merge_sort(right)
+    return _merge(left, right)
+
+
+def _merge(left, right):
+    merged = []
+    while left and right:
+        if left[0] <= right[0]:
+            merged.append(left.pop(0))
+        else:
+            merged.append(right.pop(0))
+
+    while left:
+        merged.append(left.pop(0))
+    while right:
+        merged.append(right.pop(0))
+    return merged
