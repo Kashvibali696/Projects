@@ -1,5 +1,3 @@
-var assert = require('assert');
-
 function reverseString(text) {
     if (text === undefined || text === null) {
         return null;
