@@ -1,4 +1,5 @@
-MartyrsProjects
+Projects
 ===============
 
-The main reason why I have created this repo is to maintain my programming skills by writing diverse programs in different programming languages.
+This repo consists of different projects developed with different languages.
+Project ideas are based on the lists like: **1000 Projects** or **Martyrs Project List**.
